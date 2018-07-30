@@ -21,6 +21,10 @@ class PxPostCreateCardRequest extends PxPostAuthorizeRequest
         $data->DateExpiry = $this->getCard()->getExpiryDate('my');
         $data->Cvc2 = $this->getCard()->getCvv();
 
+        if ($this->getBillingId()) {
+            $data->BillingId = $this->getBillingId();
+        }
+
         return $data;
     }
 }
