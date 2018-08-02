@@ -1,5 +1,5 @@
 {
-    "name": "omnipay/paymentexpress",
+    "name": "blasttech/paymentexpress",
     "type": "library",
     "description": "Payment Express (DPS) driver for the Omnipay payment processing library",
     "keywords": [
