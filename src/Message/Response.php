@@ -59,4 +59,20 @@ class Response extends AbstractResponse
 
         return $message;
     }
+
+    /**
+     * @return string
+     */
+    public function getResponseText()
+    {
+        return (string)$this->data->Transaction->AcquirerResponseText;
+    }
+
+    /**
+     * @return string
+     */
+    public function getReasonCode()
+    {
+        return (string)$this->data->Transaction->AcquirerReCo;
+    }
 }
